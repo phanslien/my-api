@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "LastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true,
+      "default": "2023-01-01"
+    },
+    "People": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 1
+    },
+    "Stays": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 1
+    }
+  }
+}
